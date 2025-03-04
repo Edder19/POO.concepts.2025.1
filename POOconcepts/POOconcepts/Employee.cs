@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POOconcepts;
 
-public abstract class Employee
+public abstract class Employee : IPay
 {
     protected Employee(int id, string firstName, string lastName, Date? hireDate, Date? bornDate, bool isActive)
     {
@@ -32,5 +32,7 @@ public abstract class Employee
        $"Born date......:{BornDate,20}\n\t" + 
        $"Is active......:{IsActive,20}"; }
     public abstract decimal GetValueToPay();
+
+    
 }
 

@@ -8,14 +8,19 @@
     </TypeIdentifier>
   </Class>
   <Class Name="POOconcepts.Employee">
-    <Position X="3" Y="0.5" Width="2.5" />
+    <Position X="3.5" Y="0.5" Width="1.75" />
     <AssociationLine Name="HireDate" Type="POOconcepts.Date" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="4" Y="3.017" />
-        <Point X="4" Y="3.383" />
-        <Point X="4" Y="3.383" />
+        <Point X="4" Y="3.138" />
+        <Point X="4" Y="3.138" />
         <Point X="4" Y="3.75" />
       </Path>
+    </AssociationLine>
+    <AssociationLine Name="BornDate" Type="POOconcepts.Date">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.85" Y="0.086" />
+      </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>ABACAEAAAAAAAAAEEAAAAAAAACAAAAAIAAAAAAAAAAg=</HashCode>
@@ -25,6 +30,7 @@
       <Property Name="HireDate" />
       <Property Name="BornDate" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="POOconcepts.SalaryEmployee">
     <Position X="7.5" Y="1.25" Width="1.5" />
@@ -35,10 +41,13 @@
   </Class>
   <Class Name="POOconcepts.HourlyEmployee">
     <Position X="7.5" Y="4.75" Width="1.5" />
-    <InheritanceLine Type="POOconcepts.Employee" FixedFromPoint="true">
+    <InheritanceLine Type="POOconcepts.Employee" ManuallyRouted="true" FixedFromPoint="true">
       <Path>
-        <Point X="5.188" Y="3.017" />
-        <Point X="5.188" Y="3.5" />
+        <Point X="5.25" Y="2.75" />
+        <Point X="5.482" Y="2.75" />
+        <Point X="5.482" Y="2.845" />
+        <Point X="5.393" Y="2.845" />
+        <Point X="5.393" Y="3.5" />
         <Point X="6" Y="3.5" />
         <Point X="6" Y="4.375" />
         <Point X="8.25" Y="4.375" />
@@ -50,5 +59,34 @@
       <FileName>HourlyEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="POOconcepts.CommisionEmployee">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAIAAAAAAEAAAABAAAAIAQAAAIAAgAAAAAAAA=</HashCode>
+      <FileName>ComissionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POOconcepts.BaseComissionEmployee">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
+      <FileName>BaseCommisionEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="POOconcepts.Invoice">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAgAAAFAAAAAAAAAAAAAAAJAAIggAAAgAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="POOconcepts.IPay">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

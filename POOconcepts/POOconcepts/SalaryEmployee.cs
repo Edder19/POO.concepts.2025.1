@@ -14,9 +14,8 @@ public class SalaryEmployee : Employee
     {
         _salary = salary;
     }
-
-    public decimal Salary { get => _salary; set => _salary = ValidateSalary(value); }
-
+    public decimal Salary { get => _salary; set => _salary = ValidateSalary(value); 
+    }
     public override string ToString()
     {
         return $"{base.ToString()}\n\t" +
